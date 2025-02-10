@@ -47,8 +47,63 @@
     </aside>
     <!-- FIM SIDEBAR -->
 
+    <main class="w-full flex flex-col pb-4">
+
+      <!-- MENU MOBILE -->
+      <div id="menu" onclick="closeMenu()" class="absolute z-50 w-full hidden flex-col items-center justify-center px-3 py-2 bg-white shadow-xl">
+      <button id="btn-close" class="text-3xl text-bold mt-4">X</button>
+        <nav class="flex flex-col mt-8 gap-5 w-full ">
+          <a href="#" class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-200">
+            Aluguel
+          </a>
+
+          <a href="#" class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-200">
+            Compra
+          </a>
+
+          <a href="#" class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-200">
+            Serviços
+          </a>
+
+          <a href="#" class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-200">
+            Contatos
+          </a>
+        </nav>
+      </div>
+
+      <!-- HEADER -->
+      <header class="bg-white w-full py-5 px-3 flex flex-row items-center justify-between">
+        <div class="flex items-center bg-slate-100 px-3 py-2 w-full max-w-xs lg:max-w-[50%] rounded-lg lg:mr-8">
+          <i class="fa fa-search text-gray-500" style="font-size: 16px;"></i>
+          <input 
+            type="text"
+            class="w-full bg-slate-100 px-2 outline-none"
+            placeholder="Procurando algum apartamento?"
+            >
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <a href="#" class="w-8 h-8 p-5 bg-slate-100 hidden md:flex items-center justify-center rounded-full">
+            <i class="fa fa-heart text-gray-500" style="font-size: 16px;"></i>
+          </a>
+
+          <button class="bg-rose-500 hover:bg-rose-600 duration-300 text-white flex items-center justify-center gap-2 px-4 py-2 rounded font-medium">
+            <span class="hidden md:flex">Sign in</span>
+            <i class="fa fa-user md:ml-1"></i>
+          </button>
+
+          <button id="btn-open" onclick="openMenu()" class="flex items-center justify-center px-4 py-2 sm:hidden">
+            <i class="fa fa-bars" style="font-size: 24px;"></i>
+          </button>
+        </div>
+      </header>
+      <!-- FIM HEADER -->
+
+    </main>
 
   </div>
+
+  <script src="script.js"></script>
 
 </body>
 
